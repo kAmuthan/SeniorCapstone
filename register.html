@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Add a New User {% endblock %}</h1>
+    <form method="post">
+        <p>
+            <label for="userfirst">userfirst</label>
+            <input type="text" name="userfirst"
+                   placeholder="First Name">
+            </input>
+
+            <label for="userlast">userlast</label>
+            <input type="text" name="userlast"
+                   placeholder="Last Name">
+            </input>
+        </p>
+
+        <p>
+            <label for="phone">Phone</label>
+            <input type="number" name="phone"
+                   placeholder="Phone Number">
+            </input>
+        </p>
+
+	<p>
+            <label for="email">email</label>
+            <input type="text" name="email"
+                   placeholder="email">
+            </input>
+        </p>
+
+	<p>
+            <label for="password">password</label>
+            <input type="text" name="password"
+                   placeholder="Enter Password">
+            </input>
+
+            <label for="passconfirm">passconfirm</label>
+            <input type="text" name="passconfirm"
+                   placeholder="Confirm password">
+            </input>
+        </p>
+        
+        <p>
+            <button type="register">Register</button>
+        </p>
+    </form>
+{% endblock %}
